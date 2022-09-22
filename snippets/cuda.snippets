@@ -17,6 +17,9 @@ snippet call "Kernel call"
 snippet sync "Synchonize threads"
 	__syncthreads();
 
+snippet dsync "Synchonize device"
+	cudaDeviceSynchronize();
+
 snippet tid "Thread Index"
 	threadIdx.${0}
 
